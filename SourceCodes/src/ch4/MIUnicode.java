@@ -4,13 +4,12 @@
 package ch4;
 
 public class MIUnicode {
-	public static void main ( String [] args)
-	{
+	public static void main(String[] args) {
 		char firstInitial = '\u0053';
 		char middleInitial = '\u0052';
 		char lastInitial = '\u0053';
-		
-		System.out.println(firstInitial+ middleInitial+lastInitial);
+
+		System.out.println(firstInitial + middleInitial + lastInitial);
 	}
 
 }

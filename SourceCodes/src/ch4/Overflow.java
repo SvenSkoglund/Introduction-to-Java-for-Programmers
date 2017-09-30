@@ -9,10 +9,9 @@ public class Overflow {
 
 		int big = 2147483647;
 		int bigger = big + 1;
-		
+
 		System.out.println(big);
 		System.out.println(bigger);
-		
 
 	}
 
