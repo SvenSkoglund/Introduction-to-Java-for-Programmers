@@ -1,6 +1,6 @@
 package ch10;
 
-public class EmpTest {
+public class EmpTest7 {
 
 	public static void main(String[] args) {
 
