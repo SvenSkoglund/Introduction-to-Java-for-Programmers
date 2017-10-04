@@ -8,15 +8,39 @@ public class Employee {
 	private int id;
 	private static int minWage = 1000;
 	private static int retireAge = 65;
+	private Title title;
 	
+	public Title getTitle() {
+		return title;
+	}
+
+	public void setTitle(Title title) {
+		this.title = title;
+	}
+
 	public Employee() {
-		this("J","Doe");
+		this("J","Doe", 0 , 0 , Title.TEMP);
+	}
+	public Employee(String fn) {
+		this(fn,"Doe", 0 , 0 , Title.TEMP);
+	}
+	public Employee(String fn, String ln) {
+		this(fn,ln, 0 , 0 , Title.TEMP);
+	}
+	public Employee(String fn, String ln , float salary) {
+		this(fn,ln, salary , 0 , Title.TEMP);
+	}
+	public Employee(String fn, String ln , float salary, int id) {
+		this(fn,ln, salary , id , Title.TEMP);
 	}
 	
-	public Employee(String fn, String ln)
+	public Employee(String fn, String ln, float salary, int id , Title title)
 	{
 		this.firstName = fn;
 		this.lastName = ln;
+		this.title = title;
+		this.salary = salary;
+		this.id = id;
 	}
 	
 	public String getFirstName() {
@@ -69,7 +93,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", salary=" + String.format("%1$.2f%n",salary) + ", id=" + id
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", Title=" + title + ", salary=" + String.format("%1$.2f%n",salary) + ", id=" + id
 				+ "]";
 	}
 
