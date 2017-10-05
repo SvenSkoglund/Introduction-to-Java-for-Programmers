@@ -5,23 +5,26 @@ package ch11;
 
 public class Bicycle extends Vehicle {
 	private int gears;
-	
+
 	public Bicycle() {
-		this(1,2);
+		this(1, 2);
 	}
-	public Bicycle ( int maxSpeed, int gears)
-	{
+
+	public Bicycle(int maxSpeed, int gears) {
 		super(maxSpeed, 2);
-		this.gears = gears;		
+		this.gears = gears;
 	}
+
 	public int getGears() {
 		return gears;
 	}
+
 	public void setGears(int gears) {
 		this.gears = gears;
 	}
+
 	@Override
 	public String toString() {
-		return super.toString();
-		}
+		return "Bicycle: " + super.toString();
+	}
 }

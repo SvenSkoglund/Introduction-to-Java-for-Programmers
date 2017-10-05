@@ -7,7 +7,11 @@ public class Vehicle {
 
 	private int maxSpeed;
 	private int numWheels;
-	
+
+	public Vehicle() {
+		this(50, 4);
+	}
+
 	public Vehicle(int maxSpeed, int numWheels) {
 		super();
 		this.maxSpeed = maxSpeed;
@@ -34,5 +38,5 @@ public class Vehicle {
 	public String toString() {
 		return "Vehicle [maxSpeed=" + maxSpeed + ", numWheels=" + numWheels + "]";
 	}
-	
+
 }
