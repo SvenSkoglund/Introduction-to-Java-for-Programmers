@@ -36,7 +36,7 @@ public class Vehicle {
 
 	@Override
 	public String toString() {
-		return "Vehicle [maxSpeed=" + maxSpeed + ", numWheels=" + numWheels + "]";
+		return "maxSpeed=" + maxSpeed + ", numWheels=" + numWheels;
 	}
 
 }

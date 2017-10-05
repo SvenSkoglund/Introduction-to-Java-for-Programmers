@@ -10,10 +10,7 @@ public class VehicleTest {
 	public static void main(String[] args) {
 
 		Bicycle test = new Bicycle(30, 10);
-		// System.out.println(test.toString());
-
 		Vehicle atv = new Vehicle(45, 3);
-		// System.out.println(atv.toString());
 
 		Vehicle[] vArray = new Vehicle[3];
 		vArray[0] = test;
@@ -21,7 +18,7 @@ public class VehicleTest {
 		vArray[2] = new Vehicle();
 
 		for (Vehicle vehicle : vArray) {
-			System.out.println(vehicle.toString());
+			System.out.println(vehicle);
 		}
 	}
 
