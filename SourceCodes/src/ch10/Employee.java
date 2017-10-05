@@ -117,6 +117,7 @@ public class Employee {
 		result = prime * result + id;
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + Float.floatToIntBits(salary);
+		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		return result;
 	}
 
@@ -143,6 +144,10 @@ public class Employee {
 			return false;
 		if (Float.floatToIntBits(salary) != Float.floatToIntBits(other.salary))
 			return false;
+		if (title != other.title)
+			return false;
 		return true;
 	}
+
+	
 }
