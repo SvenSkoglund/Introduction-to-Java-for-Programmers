@@ -9,7 +9,7 @@ public class Bicycle extends Vehicle {
 	public Bicycle() {
 		this(1,2);
 	}
-	public Bicycle ( int gears, int maxSpeed)
+	public Bicycle ( int maxSpeed, int gears)
 	{
 		super(maxSpeed, 2);
 		this.gears = gears;		
@@ -20,4 +20,8 @@ public class Bicycle extends Vehicle {
 	public void setGears(int gears) {
 		this.gears = gears;
 	}
+	@Override
+	public String toString() {
+		return super.toString();
+		}
 }
