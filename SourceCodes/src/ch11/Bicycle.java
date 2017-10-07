@@ -1,4 +1,4 @@
-//Create a subclass of Vehicle called Bicycle that contains a field for the number of gears on the
+//Create a subclass of Vehicle called Bicycle that contains a field for the number of gears on the bicycle
 //bike. All bikes should have two wheels
 
 package ch11;
