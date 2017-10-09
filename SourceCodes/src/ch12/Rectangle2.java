@@ -1,7 +1,4 @@
-/*Develop two child classes of Shape: Rectangle and Circle. A Rectangle has a width and
-height, a Circle has a radius. Provide gets and sets for each field and appropriate constructors.
-Implement the getArea() method in each subclass*/
-
+/*Retrofit Shape to implement Drawable, putting the actual implementation code in Rectangle and Circle. Don't worry about doing any graphics for drawing, just print out a simple message indicating the type, coordinates, and color of each shape you are "drawing."*/
 package ch12;
 
 public class Rectangle2 extends Shape2 {
@@ -17,6 +14,7 @@ public class Rectangle2 extends Shape2 {
 
 	@Override
 	public void draw() {
+		System.out.println("Type: "+ this.getClass());
 		System.out.println("X coordinate: " + this.getX());
 		System.out.println("X coordinate: " + this.getY());
 		System.out.println("Width: " + this.getWidth());
