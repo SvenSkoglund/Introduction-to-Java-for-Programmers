@@ -4,14 +4,24 @@ Implement the getArea() method in each subclass*/
 
 package ch12;
 
-public class Rectangle1 extends Shape1 {
+public class Rectangle2 extends Shape2 {
 	private int height;
 	private int width;
 
-	public Rectangle1(int x, int y, int height, int width, Color color) {
+	public Rectangle2(int x, int y, int height, int width, Color color) {
 		super(x, y);
 		this.height = height;
 		this.width = width;
+		this.setColor(color);
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("X coordinate: " + this.getX());
+		System.out.println("X coordinate: " + this.getY());
+		System.out.println("Width: " + this.getWidth());
+		System.out.println("Height: " + this.getHeight());
+		System.out.println("Color" + this.getColor());
 	}
 
 	public int getArea() {

@@ -8,7 +8,7 @@ package ch12;
 public class Circle1 extends Shape1 {
 	private double radius;
 
-	public Circle1(int x, int y, double radius) {
+	public Circle1(int x, int y, double radius, Color color) {
 		super(x, y);
 		this.radius = radius;
 	}

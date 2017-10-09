@@ -1,15 +1,13 @@
-/*Create an abstract class named Shape. Provide fields for x and y coordinates (the location of the
-shape), as well as color. Add gets and sets as well as appropriate constructors. Add an abstract
-method called getArea()*/
+/*Retrofit Shape to implement Drawable, putting the actual implementation code in Rectangle and Circle. Don't worry about doing any graphics for drawing, just print out a simple message indicating the type, coordinates, and color of each shape you are "drawing."*/
 
 package ch12;
 
-public abstract class Shape1 {
+public abstract class Shape2 implements Drawable{
 	private Color color;
 	private int x;
 	private int y;
 
-	public Shape1(int x, int y) {
+	public Shape2(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -38,6 +36,9 @@ public abstract class Shape1 {
 
 	public void setY(int y) {
 		this.y = y;
+	}
+
+	public void draw() {		
 	}
 
 }
