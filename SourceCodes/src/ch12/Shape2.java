@@ -38,7 +38,4 @@ public abstract class Shape2 implements Drawable{
 		this.y = y;
 	}
 
-	public void draw() {		
-	}
-
 }

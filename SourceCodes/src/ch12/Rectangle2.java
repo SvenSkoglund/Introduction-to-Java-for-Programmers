@@ -4,22 +4,26 @@ package ch12;
 public class Rectangle2 extends Shape2 {
 	private int height;
 	private int width;
+	private String type = "Rectangle";
+
 
 	public Rectangle2(int x, int y, int height, int width, Color color) {
 		super(x, y);
 		this.height = height;
 		this.width = width;
 		this.setColor(color);
+		if (width == height) {
+			type = "Square";
+		}
 	}
 
-	@Override
 	public void draw() {
-		System.out.println("Type: "+ this.getClass());
+		System.out.println("Type: "+ this.type);
 		System.out.println("X coordinate: " + this.getX());
 		System.out.println("X coordinate: " + this.getY());
 		System.out.println("Width: " + this.getWidth());
 		System.out.println("Height: " + this.getHeight());
-		System.out.println("Color" + this.getColor());
+		System.out.println("Color: " + this.getColor());
 	}
 
 	public int getArea() {

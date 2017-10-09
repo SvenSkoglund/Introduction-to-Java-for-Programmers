@@ -4,19 +4,20 @@ package ch12;
 
 public class Circle2 extends Shape2 {
 	private double radius;
+	private String type = "Circle";
 
 	public Circle2(int x, int y, double radius, Color color) {
 		super(x, y);
 		this.radius = radius;
+		this.setColor(color);
 	}
 	
-	@Override
 	public void draw() {
-		System.out.println("Type: "+ this.getClass());
+		System.out.println("Type: "+ this.type );
 		System.out.println("X coordinate: " + this.getX());
 		System.out.println("X coordinate: " + this.getY());
 		System.out.println("Radius: " + this.getRadius());
-		System.out.println("Color" + this.getColor());
+		System.out.println("Color: " + this.getColor());
 	}
 	public int getArea() {
 		double area = Math.PI*Math.pow(radius, 2);
