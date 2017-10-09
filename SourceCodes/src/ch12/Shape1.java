@@ -1,3 +1,7 @@
+/*Create an abstract class named Shape. Provide fields for x and y coordinates (the location of the
+shape), as well as color. Add gets and sets as well as appropriate constructors. Add an abstract
+method called getArea()*/
+
 package ch12;
 
 public abstract class Shape1 {
