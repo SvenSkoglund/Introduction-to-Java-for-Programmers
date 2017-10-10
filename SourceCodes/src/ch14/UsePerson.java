@@ -5,8 +5,8 @@ public class UsePerson {
     public static void main(String[] args) {
         Person p = null;
         String name = null;
-        name = "Some Name";// comment this line to see an exception
-        int age = 122;// set this <0 or >120 to see an exception
+        name = "Some Name"; // comment this line to see an exception
+        int age = 1;// set this <0 or >120 to see an exception
 
         try {
             p = new Person(name, age);
