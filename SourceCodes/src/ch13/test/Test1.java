@@ -6,7 +6,6 @@ package ch13.test;
 public class Test1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ch13.animal.Cat snowflake = new ch13.animal.Cat();
 		ch13.animal.Dog crystal = new ch13.animal.Dog();
 	}
