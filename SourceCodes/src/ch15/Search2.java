@@ -6,27 +6,20 @@ package ch15;
 
 import java.io.*;
 
-public class Search {
+public class Search2 {
 
-	public static void main(String[] args)
-			throws IOException, FileNotFoundException {
-		if (args.length != 2) {
-			System.out.println("Needs two args. First arg = subtext Second arg = filename");
-		}
-        String pattern = args[0];
-        String filename = args[1];
-        
-		FileReader fr = new FileReader(filename);
+	public static void main(String[] args) throws IOException, FileNotFoundException {
+		FileReader fr = new FileReader(
+				"C:\\Users\\User\\Desktop\\Working Files\\Programming\\Programming Files\\Eclipse Workspace\\Introduction-to-Java-for-Programmers\\SourceCodes\\src\\ch15\\employee.txt");
 		BufferedReader buf = new BufferedReader(fr);
-		char[] charArray = pattern.toCharArray();
+
 		String s;
 		try {
 			for (int i = 0; i < 40; i++) {
 				s = buf.readLine();
 				for (int j = 0; j < s.length(); j++)
-					if (s.charAt(j) == charArray[0] && s.charAt(j + 1) == charArray[1]
-							&& s.charAt(j + 2) == charArray[2] && s.charAt(j + 3) == charArray[3]/*
-							&& s.charAt(j + 4) == charArray[4]*/) {
+					if (s.charAt(j) == 'm' && s.charAt(j + 1) == 'a' && s.charAt(j + 2) == 'n' && s.charAt(j + 3) == 'a'
+							&& s.charAt(j + 4) == 'g') {
 						System.out.println(s);
 					}
 			}
