@@ -2,5 +2,7 @@
 <classpath>
 	<classpathentry excluding="ch11/Bicycle2.java" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/ch16/abbreviations.txt"/>
+	<classpathentry kind="lib" path="src/ch16/areacodes.txt"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
