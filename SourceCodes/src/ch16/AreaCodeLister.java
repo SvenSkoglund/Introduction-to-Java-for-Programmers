@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import 
 
 public class AreaCodeLister {
     private Map<String, String> areaCodes;
@@ -21,7 +20,7 @@ public class AreaCodeLister {
         areaCodes = new HashMap<>();
 
         try (BufferedReader in = new BufferedReader(new FileReader(
-                "areacodes.txt"))) {
+                "/IntroToJava/areacodes"))) {
 
             String line = null;
             while ((line = in.readLine()) != null) {
@@ -40,7 +39,7 @@ public class AreaCodeLister {
         abbreviations = new HashMap<>();
 
         try (BufferedReader in = new BufferedReader(new FileReader(
-                "abbreviations.txt"))) {
+                "/IntroToJava/abbreviations.txt"))) {
 
             String line = null;
             while ((line = in.readLine()) != null) {
